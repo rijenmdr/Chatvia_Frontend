@@ -2,7 +2,8 @@ export interface IUser {
   _id: string;
   name: string;
   email?: string;
-  profile_img: string;
+  profile_img?: string;
+  password: string;
 }
 
 export interface IChatList {

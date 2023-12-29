@@ -1,8 +1,9 @@
-import { Box, Flex, useColorModeValue } from '@chakra-ui/react';
-import React from 'react';
+import { Flex, useColorModeValue } from '@chakra-ui/react';
+
 import ChatLeftSidebar from '../../src/components/Dashboard/ChatLeftSidebar';
 import SideMenu from '../../src/components/Dashboard/SideMenu';
 import ChatSection from '../../src/components/Dashboard/ChatSection';
+import withAuth from '../../src/HOC/withAuth';
 
 const Dashboard = () => {
   const bgColor = useColorModeValue('light.100', 'dark.200');
@@ -18,4 +19,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default withAuth(Dashboard);

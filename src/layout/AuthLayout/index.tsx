@@ -15,14 +15,14 @@ const AuthLayout = ({ children, title, subTitle }: IProps) => {
 
   const bg = useColorModeValue('light.100', 'dark.100');
   return (
-    <Box bgColor={bg} minH="100vh" h="100%" py="3rem" pt={'2rem'} overflowY={'auto'}>
+    <Box bgColor={bg} minH="100vh" h="100%" py="3rem" pt={'4rem'} overflowY={'auto'}>
       <Container maxW="sm" centerContent>
         <VStack>
           <Box display="block" marginBottom="2rem">
             {colorMode === 'dark' ? (
-              <Image src={LogoSecondary} alt="" width={120} height={30} />
+              <Image src={LogoSecondary} alt="" width={160} height={50} />
             ) : (
-              <Image src={LogoPrimary} alt="" width={120} height={30} />
+              <Image src={LogoPrimary} alt="" width={160} height={50} />
             )}
           </Box>
 
