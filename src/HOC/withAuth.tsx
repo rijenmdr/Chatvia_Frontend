@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { NextPage } from "next";
 
+import PageLoader from "../common/PageLoader";
+
 const withAuth = (Component: NextPage) => {
   return () => {
     const router = useRouter();
@@ -24,7 +26,7 @@ const withAuth = (Component: NextPage) => {
       return <Component />;
     }
 
-    return <div>Loading</div>
+    return <PageLoader/>
   }
 };  
 export default withAuth;

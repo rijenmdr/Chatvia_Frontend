@@ -3,7 +3,7 @@ import { Flex, useColorModeValue } from '@chakra-ui/react';
 import ChatLeftSidebar from '../../src/components/Dashboard/ChatLeftSidebar';
 import SideMenu from '../../src/components/Dashboard/SideMenu';
 import ChatSection from '../../src/components/Dashboard/ChatSection';
-import withAuth from '../../src/HOC/withAuth';
+import withAuth from '../../src/hoc/withAuth';
 
 const Dashboard = () => {
   const bgColor = useColorModeValue('light.100', 'dark.200');

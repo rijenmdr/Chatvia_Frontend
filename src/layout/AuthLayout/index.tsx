@@ -18,7 +18,7 @@ const AuthLayout = ({ children, title, subTitle }: IProps) => {
     <Box bgColor={bg} minH="100vh" h="100%" py="3rem" pt={'4rem'} overflowY={'auto'}>
       <Container maxW="sm" centerContent>
         <VStack>
-          <Box display="block" marginBottom="2rem">
+          <Box display="block" marginBottom="5rem">
             {colorMode === 'dark' ? (
               <Image src={LogoSecondary} alt="" width={160} height={50} />
             ) : (

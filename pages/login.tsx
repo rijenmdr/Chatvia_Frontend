@@ -28,7 +28,7 @@ import { useForm } from 'react-hook-form';
 import { LoginSchema, LoginSchemaType } from '../src/validation/user';
 import { login } from '../src/services/user';
 import { BsEye } from 'react-icons/bs';
-import withPublic from '../src/HOC/withPublic';
+import withPublic from '../src/hoc/withPublic';
 
 const Login = () => {
   const router = useRouter();

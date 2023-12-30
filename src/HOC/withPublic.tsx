@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { NextPage } from "next";
+import PageLoader from "../common/PageLoader";
 
 const withPublic = (Component: NextPage) => {
     return () => {
@@ -14,6 +15,7 @@ const withPublic = (Component: NextPage) => {
                 if (token) {
                     router.replace("/dashboard");
                 } else {
+                    console.log("hello")
                     setAuthenticated(false)
                 }
             }
@@ -24,7 +26,7 @@ const withPublic = (Component: NextPage) => {
         if (!authenticated) {
             return <Component />;
         }
-        return <div>Loading</div>
+        // return <PageLoader/>
     }
 };
 export default withPublic;
